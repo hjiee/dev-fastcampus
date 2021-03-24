@@ -1,4 +1,4 @@
-package com.hjiee.fastcampus.part2
+package com.hjiee.fastcampus.part2.chapter1
 
 import android.content.Intent
 import android.os.Bundle

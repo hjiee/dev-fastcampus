@@ -4,7 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
-import com.hjiee.fastcampus.part2.Chapter1Activity
+import com.hjiee.fastcampus.part2.chapter1.Chapter1Activity
+import com.hjiee.fastcampus.part2.chapter2.Chapter2Activity
 
 class MainActivity : AppCompatActivity(), ItemClickListener {
 
@@ -27,6 +28,7 @@ class MainActivity : AppCompatActivity(), ItemClickListener {
 
     private fun addContents() {
         listAdapter.addItem(Contents("Part2 - Chapter1"))
+        listAdapter.addItem(Contents("Part2 - Chapter2"))
         listAdapter.notifyDataSetChanged()
     }
 
@@ -34,6 +36,7 @@ class MainActivity : AppCompatActivity(), ItemClickListener {
     override fun onClick(position: Int) {
         when (position) {
             0 -> startActivity(Intent(this@MainActivity, Chapter1Activity::class.java))
+            1 -> startActivity(Intent(this@MainActivity, Chapter2Activity::class.java))
         }
     }
 }

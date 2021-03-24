@@ -1,4 +1,4 @@
-package com.hjiee.fastcampus.part2
+package com.hjiee.fastcampus.part2.chapter1
 
 import android.os.Bundle
 import android.widget.TextView
