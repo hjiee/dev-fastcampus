@@ -8,6 +8,7 @@ import com.hjiee.fastcampus.part2.chapter1.Chapter1Activity
 import com.hjiee.fastcampus.part2.chapter2.Chapter2Activity
 import com.hjiee.fastcampus.part2.chapter3.Chapter3Activity
 import com.hjiee.fastcampus.part2.chapter4.Chapter4Activity
+import com.hjiee.fastcampus.part2.chapter5.Chapter5Activity
 
 class MainActivity : AppCompatActivity(), ItemClickListener {
 
@@ -33,6 +34,7 @@ class MainActivity : AppCompatActivity(), ItemClickListener {
         listAdapter.addItem(Contents("Part2 - Chapter2"))
         listAdapter.addItem(Contents("Part2 - Chapter3"))
         listAdapter.addItem(Contents("Part2 - Chapter4"))
+        listAdapter.addItem(Contents("Part2 - Chapter5"))
         listAdapter.notifyDataSetChanged()
     }
 
@@ -43,6 +45,7 @@ class MainActivity : AppCompatActivity(), ItemClickListener {
             1 -> startActivity(Intent(this@MainActivity, Chapter2Activity::class.java))
             2 -> startActivity(Intent(this@MainActivity, Chapter3Activity::class.java))
             3 -> startActivity(Intent(this@MainActivity, Chapter4Activity::class.java))
+            4 -> startActivity(Intent(this@MainActivity, Chapter5Activity::class.java))
         }
     }
 }

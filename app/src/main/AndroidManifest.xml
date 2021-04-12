@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.hjiee.fastcampus">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -27,6 +29,13 @@
             android:name=".part2.chapter3.DiaryActivity"
             android:theme="@style/Theme.MaterialComponents.NoActionBar" />
         <activity android:name=".part2.chapter4.Chapter4Activity" />
+        <activity
+            android:name=".part2.chapter5.Chapter5Activity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
+        <activity
+            android:name=".part2.chapter5.PhotoFrameActivity"
+            android:screenOrientation="sensor"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
     </application>
 
 </manifest>
