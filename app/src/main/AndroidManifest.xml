@@ -26,6 +26,7 @@
         <activity
             android:name=".part2.chapter3.DiaryActivity"
             android:theme="@style/Theme.MaterialComponents.NoActionBar" />
+        <activity android:name=".part2.chapter4.Chapter4Activity" />
     </application>
 
 </manifest>
