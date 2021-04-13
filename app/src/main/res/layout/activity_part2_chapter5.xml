@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".part2.chapter4.Chapter4Activity">
+        tools:context=".part2.chapter5.Chapter5Activity">
 
         <LinearLayout
             android:id="@+id/ll_row_1"

@@ -36,6 +36,7 @@
             android:name=".part2.chapter5.PhotoFrameActivity"
             android:screenOrientation="sensor"
             android:theme="@style/Theme.MaterialComponents.NoActionBar" />
+        <activity android:name=".part2.chapter6.Chapter6Activity" />
     </application>
 
 </manifest>
