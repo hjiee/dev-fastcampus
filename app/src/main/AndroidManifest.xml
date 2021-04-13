@@ -37,6 +37,7 @@
             android:screenOrientation="sensor"
             android:theme="@style/Theme.MaterialComponents.NoActionBar" />
         <activity android:name=".part2.chapter6.Chapter6Activity" />
+        <activity android:name=".part2.chapter7.Chapter7Activity" />
     </application>
 
 </manifest>

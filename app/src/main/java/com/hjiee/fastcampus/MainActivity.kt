@@ -4,18 +4,23 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
-import com.hjiee.fastcampus.part2.chapter1.Chapter1Activity
-import com.hjiee.fastcampus.part2.chapter2.Chapter2Activity
-import com.hjiee.fastcampus.part2.chapter3.Chapter3Activity
-import com.hjiee.fastcampus.part2.chapter4.Chapter4Activity
-import com.hjiee.fastcampus.part2.chapter5.Chapter5Activity
-import com.hjiee.fastcampus.part2.chapter6.Chapter6Activity
 
 class MainActivity : AppCompatActivity(), ItemClickListener {
 
     private val rvContents: RecyclerView by lazy { findViewById(R.id.rv_contents) }
 
     private val listAdapter by lazy { SimpleAdapter(clickListener = this@MainActivity) }
+    private val chapterList by lazy {
+        listOf(
+                Contents("Part2 - Chapter1", 2),
+                Contents("Part2 - Chapter2", 2),
+                Contents("Part2 - Chapter3", 2),
+                Contents("Part2 - Chapter4", 2),
+                Contents("Part2 - Chapter5", 2),
+                Contents("Part2 - Chapter6", 2),
+                Contents("Part2 - Chapter7", 2),
+        )
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,24 +36,15 @@ class MainActivity : AppCompatActivity(), ItemClickListener {
     }
 
     private fun addContents() {
-        listAdapter.addItem(Contents("Part2 - Chapter1"))
-        listAdapter.addItem(Contents("Part2 - Chapter2"))
-        listAdapter.addItem(Contents("Part2 - Chapter3"))
-        listAdapter.addItem(Contents("Part2 - Chapter4"))
-        listAdapter.addItem(Contents("Part2 - Chapter5"))
-        listAdapter.addItem(Contents("Part2 - Chapter6"))
+        listAdapter.addAll(chapterList)
         listAdapter.notifyDataSetChanged()
     }
 
 
     override fun onClick(position: Int) {
-        when (position) {
-            0 -> startActivity(Intent(this@MainActivity, Chapter1Activity::class.java))
-            1 -> startActivity(Intent(this@MainActivity, Chapter2Activity::class.java))
-            2 -> startActivity(Intent(this@MainActivity, Chapter3Activity::class.java))
-            3 -> startActivity(Intent(this@MainActivity, Chapter4Activity::class.java))
-            4 -> startActivity(Intent(this@MainActivity, Chapter5Activity::class.java))
-            5 -> startActivity(Intent(this@MainActivity, Chapter6Activity::class.java))
-        }
+        val part = chapterList[position].part
+        val chapter = position + 1
+        val classPath = "com.hjiee.fastcampus.part${part}.chapter${chapter}.Chapter${chapter}Activity"
+        startActivity(Intent(this@MainActivity, Class.forName(classPath)))
     }
 }

@@ -23,6 +23,10 @@ class SimpleAdapter constructor(
 
     override fun getItemCount(): Int = list.size
 
+    fun addAll(items: List<Contents>) {
+        list.addAll(items)
+    }
+
     fun addItem(item: Contents) {
         list.add(item)
     }
