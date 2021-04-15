@@ -16,7 +16,9 @@
     <color name="greenPress618c2f">#618c2f</color>
     <color name="pomodoro_red">#FFd32f2f</color>
     <color name="transparent">#00000000</color>
-
+    <color name="gray">#FFBDBDBD</color>
+    <color name="light_gray">#FFEFEFEF</color>
+    <color name="dark_gray">#FF212121</color>
 
 
 </resources>

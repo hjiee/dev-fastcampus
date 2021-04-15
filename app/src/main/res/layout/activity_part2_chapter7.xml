@@ -12,5 +12,45 @@
         android:layout_height="match_parent"
         tools:context=".part2.chapter7.Chapter7Activity">
 
+        <com.hjiee.fastcampus.part2.chapter7.SoundVisualizerView
+            android:id="@+id/sound_visualizer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_record_time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESET"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_record"
+            app:layout_constraintEnd_toStartOf="@+id/iv_record"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/iv_record" />
+
+        <com.hjiee.fastcampus.part2.chapter7.CountUpTextView
+            android:id="@+id/tv_record_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="00:00"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/iv_record"
+            app:layout_constraintEnd_toEndOf="@+id/iv_record"
+            app:layout_constraintStart_toStartOf="@+id/iv_record" />
+
+        <com.hjiee.fastcampus.part2.chapter7.RecordButton
+            android:id="@+id/iv_record"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
