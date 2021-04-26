@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +12,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Fastcampus">
+        android:theme="@style/Theme.Fastcampus"
+        android:usesCleartextTraffic="true">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -39,6 +41,7 @@
             android:theme="@style/Theme.MaterialComponents.NoActionBar" />
         <activity android:name=".part2.chapter6.Chapter6Activity" />
         <activity android:name=".part2.chapter7.Chapter7Activity" />
+        <activity android:name=".part2.chapter8.Chapter8Activity" />
     </application>
 
 </manifest>

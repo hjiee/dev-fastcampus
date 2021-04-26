@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity(), ItemClickListener {
                 Contents("Part2 - Chapter5", 2),
                 Contents("Part2 - Chapter6", 2),
                 Contents("Part2 - Chapter7", 2),
+                Contents("Part2 - Chapter8", 2),
         )
     }
 
