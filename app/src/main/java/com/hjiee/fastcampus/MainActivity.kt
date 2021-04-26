@@ -12,14 +12,15 @@ class MainActivity : AppCompatActivity(), ItemClickListener {
     private val listAdapter by lazy { SimpleAdapter(clickListener = this@MainActivity) }
     private val chapterList by lazy {
         listOf(
-                Contents("Part2 - Chapter1", 2),
-                Contents("Part2 - Chapter2", 2),
-                Contents("Part2 - Chapter3", 2),
-                Contents("Part2 - Chapter4", 2),
-                Contents("Part2 - Chapter5", 2),
-                Contents("Part2 - Chapter6", 2),
-                Contents("Part2 - Chapter7", 2),
-                Contents("Part2 - Chapter8", 2),
+                Contents("Part2 - Chapter1", com.hjiee.fastcampus.part2.chapter1.Chapter1Activity::class),
+                Contents("Part2 - Chapter2", com.hjiee.fastcampus.part2.chapter2.Chapter2Activity::class),
+                Contents("Part2 - Chapter3", com.hjiee.fastcampus.part2.chapter3.Chapter3Activity::class),
+                Contents("Part2 - Chapter4", com.hjiee.fastcampus.part2.chapter4.Chapter4Activity::class),
+                Contents("Part2 - Chapter5", com.hjiee.fastcampus.part2.chapter5.Chapter5Activity::class),
+                Contents("Part2 - Chapter6", com.hjiee.fastcampus.part2.chapter6.Chapter6Activity::class),
+                Contents("Part2 - Chapter7", com.hjiee.fastcampus.part2.chapter7.Chapter7Activity::class),
+                Contents("Part2 - Chapter8", com.hjiee.fastcampus.part2.chapter8.Chapter8Activity::class),
+                Contents("Part3 - Chapter1", com.hjiee.fastcampus.part3.chapter1.Chapter1Activity::class),
         )
     }
 
@@ -43,9 +44,7 @@ class MainActivity : AppCompatActivity(), ItemClickListener {
 
 
     override fun onClick(position: Int) {
-        val part = chapterList[position].part
-        val chapter = position + 1
-        val classPath = "com.hjiee.fastcampus.part${part}.chapter${chapter}.Chapter${chapter}Activity"
-        startActivity(Intent(this@MainActivity, Class.forName(classPath)))
+        val kClass = chapterList[position].kClass
+        startActivity(Intent(this@MainActivity, kClass.java))
     }
 }

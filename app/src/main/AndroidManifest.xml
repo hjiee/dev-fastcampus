@@ -42,6 +42,7 @@
         <activity android:name=".part2.chapter6.Chapter6Activity" />
         <activity android:name=".part2.chapter7.Chapter7Activity" />
         <activity android:name=".part2.chapter8.Chapter8Activity" />
+        <activity android:name=".part3.chapter1.Chapter1Activity" />
     </application>
 
 </manifest>
