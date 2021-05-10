@@ -43,6 +43,14 @@
         <activity android:name=".part2.chapter7.Chapter7Activity" />
         <activity android:name=".part2.chapter8.Chapter8Activity" />
         <activity android:name=".part3.chapter1.Chapter1Activity" />
+
+        <service
+            android:name=".part3.chapter1.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

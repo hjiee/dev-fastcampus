@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "854810926397",
+    "project_id": "festcampus-9e39a",
+    "storage_bucket": "festcampus-9e39a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854810926397:android:5bec2adb9793739693b954",
+        "android_client_info": {
+          "package_name": "com.hjiee.fastcampus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "854810926397-2bko6gm7bhnde3jfflo38caoq9in6gos.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnRvq_Ydv2Z2keyVwOUnSqjgnbIXFlN5k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "854810926397-2bko6gm7bhnde3jfflo38caoq9in6gos.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
