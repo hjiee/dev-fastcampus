@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity(), ItemClickListener {
                 Contents("Part2 - Chapter7", com.hjiee.fastcampus.part2.chapter7.Chapter7Activity::class),
                 Contents("Part2 - Chapter8", com.hjiee.fastcampus.part2.chapter8.Chapter8Activity::class),
                 Contents("Part3 - Chapter1", com.hjiee.fastcampus.part3.chapter1.Chapter1Activity::class),
+                Contents("Part3 - Chapter2", com.hjiee.fastcampus.part3.chapter2.Chapter2Activity::class),
         )
     }
 
