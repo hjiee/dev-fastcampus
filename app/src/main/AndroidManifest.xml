@@ -47,6 +47,7 @@
         <activity android:name=".part3.chapter2.Chapter2Activity" />
         <activity android:name=".part3.chapter3.Chapter3Activity" />
         <activity android:name=".part3.chapter4.Chapter4Activity" />
+        <activity android:name=".part3.chapter4.DetailActivity" />
         <activity android:name=".part3.chapter5.Chapter5Activity" />
         <activity android:name=".part3.chapter6.Chapter6Activity" />
         <activity android:name=".part3.chapter7.Chapter7Activity" />

@@ -55,11 +55,11 @@ class MainActivity : AppCompatActivity(), ItemClickListener {
             Contents(
                 "Part3 - Chapter3 : 알림",
                 com.hjiee.fastcampus.part3.chapter3.Chapter3Activity::class
-            ).apply { isTop = true },
+            ),
             Contents(
                 "Part3 - Chapter4 : 도서 리뷰",
                 com.hjiee.fastcampus.part3.chapter4.Chapter4Activity::class
-            ),
+            ).apply { isTop = true },
             Contents(
                 "Part3 - Chapter5 : 틴더",
                 com.hjiee.fastcampus.part3.chapter5.Chapter5Activity::class
